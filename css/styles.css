@@ -331,8 +331,8 @@
   }
 
   footer>.footer-container:hover {
-      background-color: red;
-      color: whitesmoke;
+      background-color: aqua;
+      color: black;
       display: flex;
       flex-direction: column;
       width: 500px;
