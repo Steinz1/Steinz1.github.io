@@ -1,0 +1,408 @@
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@700&family=Kanit:ital,wght@0,400;1,100&family=Noto+Serif:wght@700&family=Oswald&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Bangers');
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: blueviolet;
+      position: fixed;
+      /* -----------------------------------coloca el div.container encima de todo y lo posiciona con las margenes */
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+
+  .derecha,
+  .izquierda {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+  }
+
+  .derecha>a,
+  .izquierda>a {
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Josefin Sans', sans-serif;
+      color: whitesmoke;
+
+  }
+
+
+
+  .derecha>a:hover,
+  .izquierda>a:hover {
+      background-color: black;
+      color: red;
+
+  }
+
+  .image {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+  }
+
+  .image>img {
+      width: 100%;
+  }
+
+  .image>.text {
+      position: absolute;
+      color: whitesmoke;
+      bottom: 20%;
+      text-align: center;
+      margin-left: 40%;
+      font-family: 'Bangers', cursive;
+  }
+
+  .info {
+      display: grid;
+      grid-template-columns: 1200px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 150px;
+  }
+
+  .info>.title {
+      text-align: center;
+      margin-top: 50px;
+      background-color: white;
+      font-family: 'Josefin Sans', sans-serif;
+
+  }
+
+  .info>.info-desc {
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 50px;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* background-image: url('https://i.pinimg.com/736x/7a/65/a5/7a65a5d46083f2d3048e0d1cfc664c12.jpg'); */
+      flex-direction: row;
+      text-align: center;
+      margin-top: 50px;
+
+  }
+
+  .galerry1,
+  .galerry2,
+  .galerry3 {
+      display: flex;
+      margin-top: 10px;
+      flex-direction: column;
+      width: 33.33%;
+
+  }
+
+  .imagen-perfil>img {
+      width: 200px;
+      border-radius: 14px;
+  }
+
+  .description {
+      background-color: yellow;
+      border: solid;
+      border-color: red blueviolet black white;
+      font-family: 'Bangers', cursive;
+  }
+
+  .tour {
+      display: grid;
+      grid-template-columns: auto;
+      background-image: url('../images/spider-background-add.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      align-items: center;
+      padding: 150px;
+  }
+
+  .tour>.title {
+      margin-top: 15px;
+      color: black;
+      text-align: center;
+      font-family: 'Bangers', cursive;
+      background-color: yellow;
+      list-style-type: none;
+      border: solid darkcyan;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(-2deg);
+  }
+
+  .character-list {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      list-style-type: none;
+      color: white;
+      margin-top: 20px;
+  }
+
+  .columna-izquierda {
+      flex-grow: 5;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 5;
+
+  }
+
+  .columna-izquierda>.group {
+      border: solid magenta;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(10deg);
+      background-color: aqua;
+      color: black;
+      font-family: 'Bangers', cursive;
+      padding: 14px;
+  }
+
+  .columna-izquierda>.group1 {
+      border: solid yellowgreen;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(-2deg);
+      background-color: yellow;
+      color: darkred;
+      font-family: 'Bangers', cursive;
+      padding: 14px;
+  }
+
+  .columna-derecha {
+      border: solid cadetblue;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(-10deg);
+      background-color: red;
+      color: yellow;
+      font-family: 'Bangers', cursive;
+
+  }
+
+  .columna-izquierda>h1,
+  .columna-derecha>h1 {
+      padding: 14px;
+
+  }
+
+
+  .container-contact {
+      display: grid;
+      grid-template-columns: auto 500px;
+      justify-content: center;
+      font-family: 'Bangers', cursive;
+      background-color: blueviolet;
+      padding-bottom: 100px;
+
+  }
+
+  .contact-right {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 50px;
+  }
+
+  .contact-right>.ciudad,
+  .phone,
+  .email {
+      display: inline-flex;
+      flex-direction: row;
+      margin: 10px;
+      color: black;
+
+
+  }
+
+  .formulario {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+  }
+
+  .formulario>#message-div {
+      grid-row-start: 1;
+      grid-row-end: 3;
+  }
+
+
+
+  #name-email>#name,
+  #email {
+      height: 25px;
+      width: 200px;
+      margin: 1px;
+  }
+
+  #message {
+      height: 25px;
+      width: 94%;
+      padding: 10px;
+      margin: 1px;
+  }
+
+  .submit {
+      border: none;
+      text-align: center;
+      padding: 14px 16px;
+  }
+
+  .submit>.btnsend {
+      width: 150px;
+      height: 30px;
+      border: 0;
+      font-family: 'Bangers', cursive;
+      font-size: xx-large;
+  }
+
+  .imagen2 {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+  }
+
+  .image2>img {
+      width: 100%;
+  }
+
+  .socialincons {
+      background-color: yellow;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+  }
+
+  .socialincons>a,
+  i {
+      margin: 30px;
+      color: blueviolet;
+      font-size: 50px;
+  }
+
+  .socialincons>a,
+  i:hover {
+      color: red;
+      font-size: 50px;
+  }
+
+  footer {
+      background-color: yellow;
+      text-align: center;
+      color: black;
+      display: flex;
+      justify-content: center;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+  footer>.footer-container {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 30px;
+      border: solid blueviolet;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(deg);
+  }
+
+  .footer-container>h2 {
+      font-family: 'Bangers', cursive;
+  }
+
+  footer>.footer-container:hover {
+      background-color: red;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 30px;
+      border: solid blueviolet;
+      border-width: 3px 4px 3px 5px;
+      border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+      transform: rotate(deg);
+      transition: 0.6s;
+  }
+
+  @media (max-width:800px) {
+      .image>.text {
+          display: none;
+      }
+
+      .info {
+          display: grid;
+          grid-template-columns: auto;
+      }
+
+      .gallery {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .galerry1,
+      .galerry2,
+      .galerry3 {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+
+      }
+
+      .tour {
+          display: grid;
+          grid-template-columns: auto;
+          background-image: url('https://wallpapershome.com/images/wallpapers/spider-man-into-the-spider-verse-3840x2160-4k-20637.jpg');
+          background-position: center;
+      }
+
+      .tour>.title {
+          text-align: center;
+          font-family: 'Bangers', cursive;
+      }
+
+      .title>ul {
+          list-style-type: none;
+          color: white;
+      }
+
+      .container-contact {
+          display: grid;
+          grid-template-columns: auto;
+          padding: 16px;
+      }
+
+      .socialincons>a,
+      i {
+          margin: 10px;
+          color: blueviolet;
+          font-size: auto;
+      }
+
+  }
+
+  @media (max-width:1000px) {
+      .info {
+          display: grid;
+          grid-template-columns: auto;
+      }
+  }
